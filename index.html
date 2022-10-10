@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="yandex-verification" content="f66c89c9e31a0ab2" />
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5.2.1/dist/echarts.min.js"></script>
+      <title> Polycoin </title>
+      <meta name="author" content="A next evolution project on Binance smart chain">
+      <!-- FAVICON -->
+      <link rel="shortcut icon" href="img/logo.png" type="image/png">
+      <!-- GOOGLE FONTS -->
+      <!-- Cinzel font -->
+      <link
+         href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&amp;family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,400;1,700&amp;display=swap"
+         rel="stylesheet">
+      <!-- STYLE -->
+      <link rel="stylesheet" href="css/aos.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/swiper-bundle.min.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com/">
+      <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300&amp;display=swap" rel="stylesheet">
+      <style>
+         html {
+         scroll-behavior: smooth;
+         }
+      </style>
+   </head>
+   <body id="start">
+      <!-- HEADER -->
+      <header class="header">
+         <div class="container">
+            <div class="header__content">
+               <a href="#" class="logo">
+               <img width="160px" height="auto" src="img/logo.png">
+               </a>
+               <div class="header__burger">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path
+                        d="M23 12.9792H1C0.447998 12.9792 0 12.5312 0 11.9792C0 11.4272 0.447998 10.9792 1 10.9792H23C23.552 10.9792 24 11.4272 24 11.9792C24 12.5312 23.552 12.9792 23 12.9792Z"
+                        fill="white" />
+                     <path
+                        d="M23 5.3125H1C0.447998 5.3125 0 4.8645 0 4.3125C0 3.7605 0.447998 3.3125 1 3.3125H23C23.552 3.3125 24 3.7605 24 4.3125C24 4.8645 23.552 5.3125 23 5.3125Z"
+                        fill="white" />
+                     <path
+                        d="M23 20.6458H1C0.447998 20.6458 0 20.1978 0 19.6458C0 19.0938 0.447998 18.6458 1 18.6458H23C23.552 18.6458 24 19.0938 24 19.6458C24 20.1978 23.552 20.6458 23 20.6458Z"
+                        fill="white" />
+                  </svg>
+               </div>
+               <nav>
+                  <ul class="header__links">
+                     <li>
+                        <a href="#about">
+                        About
+                        </a>
+                     </li>
+                     <li>
+                        <a target="_blank" href="https://bscscan.com/address/0x58834bA6FeC3CAa025a72B420A33f289974FA159">
+                        SMART CONTRACT
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#Tokenomics">
+                        TOKENOMICS
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#roadmap">
+                        ROADMAP
+                        </a>
+                     </li>
+                     <li>
+                        <a href="audit.pdf">
+                        AUDIT
+                        </a>
+                     </li>
+                  </ul>
+                  <div class="header__tg">
+                     <ul style="margin-top: 10px;" class="header__social">
+                        <li>
+                           <a href="https://t.me/+yJcHPJa4B9wwNTli" target="_blank">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
+                              </svg>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="https://twitter.com/PolycoinToken" target="_blank">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                              </svg>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="https://instagram.com/Polycoin" target="_blank">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                              </svg>
+                           </a>
+                        </li>
+                     </ul>
+                     <a href="presale" target="_blank" class="header__button">
+                     Buy $PLYC
+                     </a>
+                  </div>
+               </nav>
+            </div>
+         </div>
+      </header>
+      <section class="banner">
+         <div class="banner__parallax">
+         </div>
+         <div class="container">
+            <div class="banner__content">
+               <div class="banner__logo" data-aos="fade-up" >
+                  <img class="banner_logo" src="img/logo2.png">
+               </div>
+               <p data-aos="fade-up" data-aos-delay="600" data-aos-duration="500">
+                  A next evolution project on Binance smart chain<br>
+                  Launched,  swap,  wallet,  built new exchange
+               </p>
+               <div class="banner__button" data-aos="fade-up" data-aos-delay="900" data-aos-duration="500">
+                  <a target="_blank" href="audit.pdf">AUDIT</a>
+                  <a target="_blank" href="presale/index.html">BUY $PLYC</a>
+                  <a target="_blank" href="whitepaper">WHITEPAPER</a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <div class="social">
+         <div class="container">
+            <ul>
+               <li>
+                  <a href="https://www.hotbit.io/exchange?" data-aos="fade-right" data-aos-delay="200" data-aos-duration="500">
+                  <img src="img/social/hb.png" alt="">
+                  </a>
+               </li>
+               <li>
+                  <a href="https://coinmarketcap.com/currencies/" target="_blank" data-aos="fade-right" data-aos-delay="200" data-aos-duration="500">
+                  <img src="img/social/cmc.png" alt="">
+                  </a>
+               </li>
+               <li>
+                  <a href="https://www.coingecko.com/tr/coins/" target="_blank" data-aos="fade-right" data-aos-delay="200" data-aos-duration="500">
+                  <img src="img/social/cg.png" alt="">
+                  </a>
+               </li>
+               <li>
+                  <a href="https://poocoin.app/tokens/" target="_blank" data-aos="fade-right" data-aos-delay="400" data-aos-duration="500">
+                  <img src="img/social/social3.png" alt="">
+                  </a>
+               </li>
+               <li>
+                  <a href="#" target="_blank" data-aos="fade-right" data-aos-delay="400" data-aos-duration="500">
+                  <img style="width: 100px !Important;" src="img/logo2.png" alt="">
+                  </a>
+               </li>
+               <li>
+                  <a href="https://bscscan.com/address/0x58834bA6FeC3CAa025a72B420A33f289974FA159" target="_blank" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="500">
+                  <img src="img/social/bsc.png" alt="">
+                  </a>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <section class="about" id="about">
+         <div class="container">
+            <div class="about__img">
+               <span>
+               <img class="about-section__img" src="img/logo.png" alt="" data-aos="fade-right">
+               </span>
+            </div>
+            <div class="about__content">
+               <h2 class="about__title__one" data-aos="fade-left" data-aos-delay="100" data-aos-duration="500">
+                  <span>ABOUT</span> $PLYC
+               </h2>
+               <p data-aos="fade-right" data-aos-delay="400" data-aos-duration="500">
+                  The Polycoin protocol adds incentives to earning 
+                  tokens safely and securely for $PLYC Token participants by introducing revenue sharing through the classic AMM model. 
+                  We provide a platform for trading, staking, farming, referrals and  winning ; 
+                  these concepts are being actively developed as all new features are being launched on our upcoming  project shortly. 
+               </p>
+               <div class="about__description" data-aos="fade-left" data-aos-delay="500" data-aos-duration="500">
+                  <p>
+                     <a target="_blank" href="#"> <Strong>www.Polycoin.com</strong></a> (beta version) <br> 
+                  </p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- presale details -->
+      <section
+         style="background:url(static/shadow_header-deb2f541814e02c06dc921aa49d7b111.png); margin-top: 20px; margin-bottom: 50px; background-repeat: no-repeat; background-position: center;"
+         id="Tokenomics">
+         <div class="container grid">
+            <h2 class="tokenomics__title" data-aos="fade-up" data-aos-delay="0" data-aos-duration="500">
+               TOKEN<span>NOMICS</span>
+            </h2>
+            <br><br>
+            <div class="cards">
+               <div class="card">
+                  <h3 class="presale_title">Token Name</h3>
+                  <span class="presale_discription">Polycoin</span>
+               </div>
+               <div class="card">
+                  <h3 class="presale_title">Token Symbol</h3>
+                  <span class="presale_discription">$PLYC</span>
+               </div>
+               <div class="card">
+                  <h3 class="presale_title">Token Decimals</h3>
+                  <span class="presale_discription">18</span>
+               </div>
+               <div class="card">
+                  <h3 class="presale_title">Total Supply</h3>
+                  <span class="presale_discription">10 000</span>
+               </div>
+               <div class="card">
+                  <h3 class="presale_title">Listing Price</h3>
+                  <span class="presale_discription">1 $BNB = 1 $PLYC</span>
+               </div>
+               <div class="card">
+                  <h3 class="presale_title">Network</h3>
+                  <span class="presale_discription">Binance Smartchain(BSC)</span>
+               </div>
+            </div>
+            <br>
+         </div>
+         <div class="card app__data-container flex flex--column">
+            <div class="app__data-content">
+               <h3 class="presale_title">Contract Address</h3>
+               <div class="app__value app__address">
+                  <div id="app__address-text" class="app__address-text"><a target="_blank" href="https://bscscan.com/token/0x58834bA6FeC3CAa025a72B420A33f289974FA159" style="color: #fff; font-weight: bold;">0x58834bA6FeC3CAa025a72B420A33f289974FA159</a></div>
+                  <button style="background-color:transparent; border: none;" onclick="myFunction()" class="app__address-copy">
+                  <img src="img/clipboard-icon.png" alt="" />
+                  </button>
+               </div>
+            </div>
+         </div>
+         <BR>
+      </section>
+      <section class="tokenomics">
+         <div class="container">
+         <h2 class="tokenomics__title" data-aos="fade-up" data-aos-delay="0" data-aos-duration="500">
+            TOKEN <span>DISTRIBUTION</span>
+         </h2>
+         <!-- Section distribution -->
+         <section class="distribution section" id="token">
+            <div class="distribution__container container flex flex--column">
+               <div class="distribution__charts flex">
+                  <div class="distribution__chart distribution__chart--1" id="chart1"></div>
+               </div>
+         </section>
+         </div>
+      </section>
+      <!--vison-->
+      <section class="mission" id="mission">
+         <div class="container">
+            <div class="mission__content">
+               <h2 class="about__title__one" data-aos="fade-left" data-aos-delay="100" data-aos-duration="500">
+                  <span>$PLYC</span> Mission
+               </h2>
+               <br>
+               <div class="mission_item">
+                  <p data-aos="fade-left" data-aos-delay="400" data-aos-duration="500">
+                     Our mission is to elevate $PLYC to an entirely new level and 
+                     create security by providing investors with an 
+                     innovative and user-friendly swap exchange that 
+                     allows them to locate a new token in development 
+                     and to make informed decisions about whether to invest. 
+                     We use a decentralized smartchain  blockchain platform to ensure everyone has equal access to financial management and security.
+                  </p>
+                  <div class="discription_holder">
+                  <div class="mission__description" data-aos="fade-left" data-aos-delay="500" data-aos-duration="500">
+                     <p>
+                        Educating all Holders with easy, safe and low-risk methods to gain exposure to digital assets via the decentralised  blockchain
+                     </p>
+                  </div>
+                  <div class="mission__description" data-aos="fade-left" data-aos-delay="500" data-aos-duration="500">
+                     <p>
+                        A low barrier of entry to a futuristic, advanced financial Borderless ecosystem
+                     </p>
+                  </div>
+                  <div class="mission__description" data-aos="fade-left" data-aos-delay="500" data-aos-duration="500">
+                     <p>
+                        Function as a community driven digital asset, fully decentralized in any sense of the term
+                     </p>
+                  </div>
+                  <div class="mission__description" data-aos="fade-left" data-aos-delay="500" data-aos-duration="500">
+                     <p>
+                        $PLYCswap's goal is to support all, regardless of their financial standing.
+                     </p>
+                  </div>
+                  <div class="mission__description" data-aos="fade-left" data-aos-delay="500" data-aos-duration="500">
+                     <p>
+                        $PLYCswap allows everyone to have the decentralization experience and to seamlessly interact from their wallets with 100% ownership
+                     </p>
+                  </div>
+                  <div class="mission__description" data-aos="fade-left" data-aos-delay="500" data-aos-duration="500">
+                     <p>
+                        3% of the $PLYCswap token sale will go to charity.
+                     </p>
+                  </div>
+                  </div>
+               </div>
+            </div>
+            <div class="about__img">
+               <center><img src="img/logo.png" style="width: 90%;" alt="" data-aos="fade-right"></center>
+            </div>
+         </div>
+      </section>
+      <!--Features-->
+      <section class="features" id="features">
+         <div class="container">
+            <div id="features__img--top" class="about__img">
+               <img src="img/logo.png" style="width: 70%;" alt="" data-aos="fade-right">
+            </div>
+            <div class="features__content">
+               <h2 class="about__title__one" id="features_title" data-aos="fade-left" data-aos-delay="100" data-aos-duration="500">
+                  <span>$PLYC</span> FEATURES
+               </h2>
+               <div class="features_item">
+                  <div class="features__description" data-aos="fade-left" data-aos-delay="500" data-aos-duration="500">
+                     <p>
+                        Swap exchange
+                     </p>
+                  </div>
+                  <div class="features__description" data-aos="fade-left" data-aos-delay="500" data-aos-duration="500">
+                     <p>
+                        Liquidity
+                     </p>
+                  </div>
+                  <div class="features__description" data-aos="fade-left" data-aos-delay="500" data-aos-duration="500">
+                     <p>
+                        AMM
+                     </p>
+                  </div>
+                  <div class="features__description" data-aos="fade-left" data-aos-delay="500" data-aos-duration="500">
+                     <p>
+                        Referrals
+                     </p>
+                  </div>
+                  <div class="features__description" data-aos="fade-left" data-aos-delay="500" data-aos-duration="500">
+                     <p>
+                        Lottery and Prediction 
+                     </p>
+                  </div>
+                  <div class="features__description" data-aos="fade-left" data-aos-delay="500" data-aos-duration="500">
+                     <p>
+                        IFO 
+                     </p>
+                  </div>
+                  <div class="features__description" data-aos="fade-left" data-aos-delay="500" data-aos-duration="500">
+                     <p>
+                        NFT 
+                     </p>
+                  </div>
+                  <div class="features__description" data-aos="fade-left" data-aos-delay="500" data-aos-duration="500">
+                     <p>
+                        + Many More 
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div id="features__img--bottom" class="about__img">
+               <img src="img/modals/8.png" style="width: 100%;" alt="" data-aos="fade-right">
+            </div>
+         </div>
+      </section>
+      <!-- vision -->
+      <section class="vision" id="vision">
+         <div class="container">
+            <h2 data-aos="fade-up" data-aos-delay="0" data-aos-duration="500">
+               <span>$PLYC</span> Vision
+            </h2>
+            <br>
+            <p data-aos="fade-left" data-aos-delay="400" data-aos-duration="500"><strong>$PLYC powers $PLYCSwap Ecosystem.</strong><br>
+               The $PLYC Token ecosystem is designed to promote financial inclusion and social equity.<br>
+               It serves as an innovative tool in promoting equitable resources distribution at the core of its design and implementation.generating opportunities through its multiple features, encouraging sustainable, long-term practices to promote community growth and wealth with its visionary positioning in the third world countries , further strengthens a pioneering and self-sustaining model of resource circulation,
+               <span style="font-weight: 800;">Buy it, win it, farm it, spend it, stake it...</span>It's all about our collective willingness to build communities
+            </p>
+         </div>
+      </section>
+      <!-- ROADMAP -->
+      <section class="roadmap" id="roadmap">
+         <div class="container">
+            <div class="roadmap__top">
+               <h2>
+                  <span>ROAD</span>MAP
+               </h2>
+               <div class="roadmap__arrows">
+                  <div class="roadmap__slider__prev">
+                     <svg width="29" height="22" viewBox="0 0 29 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25.9983 10.8765H1.00005C5.26183 9.9224 14.5487 7.63302 14.5487 0" stroke="white"
+                           stroke-width="2" />
+                        <path d="M29 10.876H1.00018C5.26195 11.8301 14.5488 14.1195 14.5488 21.7525" stroke="white"
+                           stroke-width="2" />
+                     </svg>
+                  </div>
+                  <div class="roadmap__slider__next">
+                     <svg width="29" height="22" viewBox="0 0 29 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.00171 10.8765H27.9999C23.7382 9.9224 14.4513 7.63302 14.4513 0" stroke="white"
+                           stroke-width="2" />
+                        <path d="M0 10.876H27.9998C23.738 11.8301 14.4512 14.1195 14.4512 21.7525" stroke="white"
+                           stroke-width="2" />
+                     </svg>
+                  </div>
+               </div>
+            </div>
+            <div class="roadmap__content">
+               <div class="swiper-container roadmap__swiper">
+                  <div class="swiper-wrapper">
+                     <div class="swiper-slide swiper-pagination-current">
+                        <div class="roadmap__item">
+                           <h3>
+                              Phase 1
+                           </h3>
+                           <ul>
+                              <li class="unchecked">
+                                 Presale  
+                              </li>
+                              <li class="unchecked">
+                                 Marketing
+                              </li>
+                              <li class="unchecked">
+                                 Built Community
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="roadmap__item">
+                           <h3>
+                              Phase 2
+                           </h3>
+                           <ul>
+                              <li class="unchecked">
+                                 Listing on hotbit
+                              </li>
+                              <li class="unchecked">
+                                 Listing on Bitmart
+                              </li>
+                              <li class="unchecked" >
+                                 Listing on Pancakeswap
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="roadmap__item">
+                           <h3>
+                              Phase 3
+                           </h3>
+                           <ul>
+                              <li class="unchecked">
+                                 PLYC Swap
+                              </li>
+                              <li class="unchecked">
+                                 Listing on CMC & CG
+                              </li>
+                              <li class="unchecked">
+                                 50K Holders
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="roadmap__item">
+                           <h3>
+                              Phase 4
+                           </h3>
+                           <ul>
+                              <li class="unchecked">
+                                 PLYC Launchpad 
+                              </li>
+                              <li class="unchecked">
+                                 Aproch Tier 1 exchanges Binance Hubi Global
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="roadmap__item">
+                           <h3>
+                              Phase 5
+                           </h3>
+                           <ul>
+                              <li class="unchecked">
+                                 Wallet Launch
+                              </li>
+                              <li class="unchecked">
+                                 PLYC Debit Card
+                              </li>
+                              <li class="unchecked">
+                                 NFT Marketplace
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="roadmap__item">
+                           <h3>
+                              Phase 6
+                           </h3>
+                           <ul>
+                              <li class="unchecked">
+                                 100K Holders
+                              </li>
+                              <li class="unchecked">
+                                 PLYC Exchange
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- HOW TO BUY -->
+      <section class="htb" id="htb">
+         <div class="container">
+            <center><h2 style="font-family: cursive !important;position: relative;" data-aos="fade-up" data-aos-delay="0" data-aos-duration="500">
+               <span>HOW TO BUY</span> $PLYC
+            </h2></center>
+            <div class="htb__content">
+               <div class="htb__phone" data-aos="fade-right" data-aos-delay="0" data-aos-duration="500">
+                  <img src="img/logo.png" alt="">
+               </div>
+               <ul>
+                  <li class="htb__card" data-aos="fade-left" data-aos-delay="100" data-aos-duration="500">
+                     <div class="htb__card__icon">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                           xmlns="http://www.w3.org/2000/svg">
+                           <g clip-path="url(#clip45)">
+                              <path
+                                 d="M23.968 8.67407C22.9832 3.73325 18.1796 0.526348 13.2388 1.51109C9.62507 2.23134 6.79942 5.05521 6.07694 8.66851C2.57374 9.07224 0.0608481 12.2393 0.464353 15.7427C0.835827 18.967 3.56671 21.3996 6.81232 21.3974H11.3732C11.877 21.3974 12.2854 20.989 12.2854 20.4852C12.2854 19.9813 11.877 19.5729 11.3732 19.5729H6.81232C4.2932 19.558 2.26344 17.504 2.27812 14.9851C2.29303 12.466 4.34703 10.436 6.86615 10.4509C7.33105 10.4509 7.72166 10.1012 7.77282 9.63902C8.23594 5.63555 11.857 2.76542 15.8607 3.22854C19.2267 3.61781 21.8819 6.27307 22.2712 9.63902C22.3477 10.1095 22.7552 10.454 23.2317 10.4509C25.7508 10.4509 27.7928 12.4929 27.7928 15.012C27.7928 17.5309 25.7508 19.5729 23.2317 19.5729H18.6708C18.167 19.5729 17.7586 19.9813 17.7586 20.4852C17.7586 20.989 18.167 21.3974 18.6708 21.3974H23.2319C26.7582 21.3754 29.5992 18.4988 29.5774 14.9724C29.5574 11.7611 27.1555 9.06423 23.968 8.67407Z"
+                                 fill="white" />
+                              <path
+                                 d="M18.2467 23.2675L15.9343 25.5806V14.0998C15.9343 13.596 15.5259 13.1876 15.0223 13.1876C14.5184 13.1876 14.11 13.596 14.11 14.0998V25.5806L11.7975 23.2675C11.4477 22.9049 10.87 22.8949 10.5076 23.245C10.1453 23.5949 10.1353 24.1723 10.4852 24.5347C10.4927 24.5425 10.5001 24.5498 10.5076 24.5572L14.3763 28.4267C14.4608 28.511 14.5609 28.578 14.671 28.6238C14.8955 28.7188 15.1488 28.7188 15.3735 28.6238C15.4836 28.578 15.5837 28.511 15.668 28.4267L19.5367 24.5572C19.899 24.2073 19.909 23.6298 19.5591 23.2675C19.209 22.9051 18.6316 22.8951 18.2692 23.245C18.2616 23.2523 18.2541 23.2597 18.2467 23.2675Z"
+                                 fill="white" />
+                           </g>
+                           <defs>
+                              <clipPath id="clip45">
+                                 <rect width="29.1556" height="29.1556" fill="white"
+                                    transform="translate(0.421829 0.422241)" />
+                              </clipPath>
+                           </defs>
+                        </svg>
+                     </div>
+                     <div class="htb__card__icon__info">
+                        <h4>
+                           Download & setup MetaMask or TrustWallet
+                        </h4>
+                        <p>
+                           Download <a href="https://metamask.io/" target="_blank" style="font-weight: 600;color:rgb(36 120 46);">MetaMask</a> (a crypto wallet in form of a
+                           browser extension) or <a href="https://trustwallet.com/" target="_blank"style="font-weight: 600;color:rgb(36 120 46);">TrustWallet</a>
+                           (an app for your phone). After that, you will have to add the Binance Smart Chain to
+                           your network list. (<a href="https://academy.binance.com/en/articles/connecting-metamask-to-binance-smart-chain" target="_blank" style="font-weight: 600;color:rgb(36 120 46);">Click here for a step-by-step
+                           tutorial</a>)
+                        </p>
+                     </div>
+                  </li>
+                  <li class="htb__card" data-aos="fade-left" data-aos-delay="0" data-aos-duration="500">
+                     <div class="htb__card__icon">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                           xmlns="http://www.w3.org/2000/svg">
+                           <g clip-path="url(#clip11)">
+                              <path
+                                 d="M25.3077 4.69194C22.5543 1.93856 18.8935 0.422241 14.9996 0.422241C11.1057 0.422241 7.4449 1.93856 4.69152 4.69194C1.9382 7.44531 0.421829 11.1062 0.421829 15C0.421829 18.8939 1.9382 22.5547 4.69152 25.3081C7.4449 28.0615 11.1057 29.5778 14.9996 29.5778C18.8935 29.5778 22.5543 28.0615 25.3077 25.3081C28.061 22.5547 29.5774 18.8939 29.5774 15C29.5774 11.1062 28.061 7.44531 25.3077 4.69194ZM14.9996 27.8695C7.90336 27.8695 2.13016 22.0963 2.13016 15C2.13016 7.90377 7.90336 2.13057 14.9996 2.13057C22.0959 2.13057 27.8691 7.90377 27.8691 15C27.8691 22.0963 22.0959 27.8695 14.9996 27.8695Z"
+                                 fill="white" />
+                              <path
+                                 d="M15.9143 14.1459H14.0844C13.042 14.1459 12.1939 13.2978 12.1939 12.2554C12.1939 11.2129 13.042 10.3648 14.0844 10.3648H17.7441C18.2158 10.3648 18.5983 9.98236 18.5983 9.51063C18.5983 9.0389 18.2158 8.65647 17.7441 8.65647H15.8535V6.76591C15.8535 6.29418 15.4711 5.91174 14.9994 5.91174C14.5276 5.91174 14.1452 6.29418 14.1452 6.76591V8.65647H14.0845C12.1 8.65647 10.4856 10.271 10.4856 12.2554C10.4856 14.2398 12.1001 15.8542 14.0845 15.8542H15.9144C16.9568 15.8542 17.8049 16.7023 17.8049 17.7447C17.8049 18.7872 16.9568 19.6353 15.9144 19.6353H12.2547C11.783 19.6353 11.4005 20.0177 11.4005 20.4895C11.4005 20.9612 11.783 21.3436 12.2547 21.3436H14.1452V23.2342C14.1452 23.706 14.5276 24.0884 14.9994 24.0884C15.4711 24.0884 15.8535 23.706 15.8535 23.2342V21.3436H15.9143C17.8987 21.3436 19.5131 19.7291 19.5131 17.7447C19.5131 15.7603 17.8987 14.1459 15.9143 14.1459Z"
+                                 fill="white" />
+                           </g>
+                           <defs>
+                              <clipPath id="clip11">
+                                 <rect width="29.1556" height="29.1556" fill="white"
+                                    transform="translate(0.421829 0.422241)" />
+                              </clipPath>
+                           </defs>
+                        </svg>
+                     </div>
+                     <div class="htb__card__icon__info">
+                        <h4>
+                           Buy and send BNB to MetaMask
+                        </h4>
+                        <p>
+                           Buy BNB on an exchange (i.e. Binance, Kraken, Coinbase etc.). Transfer the tokens to
+                           your MetaMask wallet address. <span>BEP-20 addresses start with a "0x"</span>
+                        </p>
+                     </div>
+                  </li>
+                  <li class="htb__card" data-aos="fade-left" data-aos-delay="0" data-aos-duration="500">
+                     <div class="htb__card__icon">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                           xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M23.1597 27.5561C23.3494 27.7458 23.5949 27.8406 23.846 27.8406C24.0859 27.8406 24.3314 27.7513 24.5155 27.5672L28.382 23.7844C28.5661 23.6059 28.6665 23.3604 28.6665 23.0981C28.6665 22.8359 28.5605 22.596 28.382 22.4119L24.5155 18.6291C24.1361 18.2608 23.5335 18.2664 23.1597 18.6402C22.7915 19.0196 22.797 19.6222 23.1709 19.996L25.358 22.1385H22.9309C21.4524 22.1385 20.0632 21.4857 19.1091 20.3531L10.6842 8.88749C9.39539 7.06304 7.29197 5.96948 5.06022 5.96948H2.29286C1.76282 5.96948 1.33878 6.39909 1.33878 6.92913C1.33878 7.45917 1.76839 7.88321 2.29286 7.88321H5.06022C6.67266 7.88321 8.19583 8.6699 9.13316 10.0034L17.5915 21.5136C17.6026 21.5303 17.6138 21.5415 17.625 21.5582C18.9417 23.1484 20.8722 24.0634 22.9365 24.0634H25.3636L23.1764 26.2059C22.7915 26.5741 22.7859 27.1767 23.1597 27.5561Z"
+                              fill="white" />
+                           <path
+                              d="M28.3762 6.24286L24.4874 2.43215C24.108 2.06391 23.5054 2.06949 23.1316 2.44331C22.7634 2.82271 22.7689 3.42528 23.1428 3.7991L25.3578 5.96947H22.9307C20.8719 5.96947 18.9359 6.87891 17.6192 8.46903C17.608 8.48019 17.5969 8.49693 17.5857 8.51367L16.0012 10.6729C15.6887 11.0969 15.778 11.6995 16.2076 12.0119C16.3806 12.1347 16.5758 12.196 16.7711 12.196C17.0668 12.196 17.3569 12.0621 17.5411 11.8055L19.1089 9.67417C20.0574 8.53598 21.4466 7.88878 22.9307 7.88878H25.3578L23.1428 10.0592C22.7634 10.4274 22.7578 11.0355 23.1316 11.4149C23.3213 11.6046 23.5668 11.6995 23.8179 11.6995C24.0578 11.6995 24.3033 11.6102 24.4874 11.4261L28.3762 7.61539C28.5603 7.43685 28.6608 7.19135 28.6608 6.92912C28.6608 6.66689 28.5603 6.4214 28.3762 6.24286Z"
+                              fill="white" />
+                           <path
+                              d="M10.6784 21.1453L12.0677 19.2595C12.3801 18.8354 12.2908 18.2329 11.8612 17.9204C11.4372 17.608 10.8346 17.6972 10.5222 18.1269L9.12732 20.0294C9.12174 20.0406 9.11616 20.0462 9.11059 20.0573C8.17883 21.3629 6.66124 22.144 5.05438 22.144H2.28702C1.75698 22.144 1.33294 22.5736 1.33294 23.1036C1.33294 23.6337 1.76255 24.0577 2.28702 24.0577H5.05438C7.28613 24.0577 9.38955 22.9697 10.6784 21.1453Z"
+                              fill="white" />
+                        </svg>
+                     </div>
+                     <div class="htb__card__icon__info">
+                        <h4>
+                           Head on to Presale page and buy $PLYC.
+                        </h4>
+                        <p>
+                           <a href="presale/index.html" target="_blank" style="font-weight: 600;color:rgb(36 120 46);">Click here</a> to head on over to presale page or send bnb to this address <span>0x74e3F296D587f48539eA71759Cc44F2AF61DB651</span>,
+                           and tokens will be instantly transferred to your wallet.
+                        </p>
+                     </div>
+                  </li>
+                  <li class="htb__card" data-aos="fade-left" data-aos-delay="0" data-aos-duration="500">
+                     <div class="htb__card__icon">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                           xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M27.0647 14.4265V11.204C27.0647 9.62078 25.805 8.32698 24.2353 8.2705V6.29251C24.2353 5.26223 23.3971 4.42402 22.3668 4.42402H17.2227L16.5584 2.57758C16.389 2.10672 16.0462 1.73046 15.593 1.51815C15.1399 1.30578 14.6314 1.28315 14.1612 1.4543L4.82649 4.8518C4.3568 5.02274 3.98209 5.36649 3.77132 5.81973C3.56056 6.27298 3.53915 6.78104 3.7111 7.25041L4.08614 8.27407C2.55211 8.36894 1.33294 9.64645 1.33294 11.204V25.7248C1.33294 27.3438 2.65012 28.661 4.26914 28.661H24.1285C25.7475 28.661 27.0647 27.3438 27.0647 25.7248V22.3955C27.969 22.2656 28.6663 21.4861 28.6663 20.5464V16.2756C28.6663 15.336 27.969 14.5564 27.0647 14.4265ZM27.0647 20.5464C27.0647 20.6936 26.945 20.8134 26.7978 20.8134H22.527C21.2023 20.8134 20.1246 19.7357 20.1246 18.411C20.1246 17.0864 21.2023 16.0087 22.527 16.0087H26.7978C26.945 16.0087 27.0647 16.1284 27.0647 16.2756V20.5464ZM5.21492 6.69947C5.18177 6.60898 5.20606 6.53259 5.22351 6.49506C5.24097 6.45758 5.28373 6.38973 5.37427 6.35679L14.7089 2.95929C14.7996 2.92635 14.876 2.95085 14.9135 2.96842C14.951 2.98598 15.0188 3.02901 15.0514 3.11976L15.5207 4.42408H15.1598C14.1295 4.42408 13.2913 5.26228 13.2913 6.29257V8.26783H5.7895L5.21492 6.69947ZM22.6337 6.29251V8.26778H14.8928V6.29251C14.8928 6.14533 15.0126 6.02559 15.1598 6.02559H22.3668C22.514 6.02559 22.6337 6.14533 22.6337 6.29251ZM24.1285 27.0594H4.26914C3.53322 27.0594 2.93451 26.4607 2.93451 25.7248V11.204C2.93451 10.4681 3.53322 9.86934 4.26914 9.86934H24.1285C24.8644 9.86934 25.4632 10.4681 25.4632 11.204V14.4071H22.527C20.3192 14.4071 18.523 16.2033 18.523 18.411C18.523 20.6188 20.3192 22.4149 22.527 22.4149H25.4632V25.7248C25.4632 26.4607 24.8644 27.0594 24.1285 27.0594Z"
+                              fill="white" />
+                           <path
+                              d="M22.527 19.2109C22.9692 19.2109 23.3277 18.8524 23.3277 18.4102C23.3277 17.9679 22.9692 17.6094 22.527 17.6094C22.0847 17.6094 21.7262 17.9679 21.7262 18.4102C21.7262 18.8524 22.0847 19.2109 22.527 19.2109Z"
+                              fill="white" />
+                        </svg>
+                     </div>
+                     <div class="htb__card__icon__info">
+                        <h4>
+                           View $PLYC and HODL
+                        </h4>
+                        <p>
+                           Swap BNB for les. Now you need to add PLYC to your MetaMask or Trust Wallet to view your $PLYC. Lastly
+                           HODL!
+                        </p>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+         <div class="container">
+            <div class="footer__top">
+               <a href="index.html" style="width:20%"  class="logo">
+               <img class="footer_logo" src="img/logo.png">
+               </a>
+               <ul class="header__links">
+                  <li>
+                     <a href="#about">
+                     ABOUT
+                     </a>
+                  </li>
+                  <li>
+                     <a href="https://bscscan.com/address/0x58834bA6FeC3CAa025a72B420A33f289974FA159">
+                     SMART CONTRACT
+                     </a>
+                  </li>
+                  <li>
+                     <a target="_blank" href="#Tokenomics">
+                     TOKENOMICS
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#roadmap">
+                     ROADMAP
+                     </a>
+                  </li>
+                  <li>
+                     <a href="audit.pdf">
+                     AUDIT
+                     </a>
+                  </li>
+                  <li>
+                     <a target="_blank" href="whitepaper">
+                     WHITEPAPER
+                     </a>
+                  </li>
+               </ul>
+               <a href="#start" class="to-top">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M10.8249 1.00846C10.3693 0.552845 9.63061 0.552845 9.175 1.00846L1.00833 9.17512C0.552723 9.63073 0.552723 10.3694 1.00833 10.825C1.46395 11.2807 2.20264 11.2807 2.65825 10.825L8.83329 4.65V18.1667C8.83329 18.8111 9.35563 19.3334 9.99996 19.3334C10.6443 19.3334 11.1666 18.8111 11.1666 18.1667V4.65L17.3417 10.825C17.7973 11.2807 18.536 11.2807 18.9916 10.825C19.4472 10.3694 19.4472 9.63073 18.9916 9.17512L10.8249 1.00846Z" />
+                  </svg>
+               </a>
+            </div>
+         </div>
+         <div class="footer__line"></div>
+         <div class="container">
+
+            <div class="footer__line"></div>
+            <div class="footer__bottom">
+               <span>© 2022 Polycoin | All Rights Reserved</span>
+               <ul class="header__social">
+                  <li>
+                     <a href="https://t.me/+yJcHPJa4B9wwNTli" target="_blank">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                           xmlns="http://www.w3.org/2000/svg">
+                           <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
+                        </svg>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="https://twitter.com/PolycoinToken" target="_blank">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                           xmlns="http://www.w3.org/2000/svg">
+                           <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                        </svg>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="https://instagram.com/Polycoin" target="_blank">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                           xmlns="http://www.w3.org/2000/svg">
+                           <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                        </svg>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </footer>
+      <!-- SCRIPTS -->
+      <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery-3.1.1.min.js"></script>
+      <script src="js/jquery-migrate-1.4.1.min.js"></script>
+      <script src="js/aos.js"></script>
+      <script src="js/swiper-bundle.min.js"></script>
+      <script src="js/main.js"></script>
+   </body>
+</html>

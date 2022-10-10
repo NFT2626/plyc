@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Polycoin finance whitepaper">
+    <meta name="author" content="Polycoin finance">
+    <meta name="keywords" content="Polycoin finance, whitepaper">
+
+    <title>Polycoin Finance WhitePaper | A next evolution project on Binance smart chain | 
+        Launched, swap, wallet, built new exchange</title>
+
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/stroke.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="js/syntax-highlighter/styles/shCore.css" media="all">
+    <link rel="stylesheet" type="text/css" href="js/syntax-highlighter/styles/shThemeRDark.css" media="all">
+<meta name="facebook-domain-verification" content="c69glyle4v883gu5l8d675gom0ler5" />
+    <!-- CUSTOM -->
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+
+    <script>
+        var mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        function topFunction() {
+            window.scrollTo({ top: 0, behavior: 'smooth' })
+            document.documentElement.scrollTo({ top: 0, behavior: 'smooth' })
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelector('#mode').addEventListener('click',()=>{
+                document.querySelector('html').classList.toggle('dark');
+            })
+        });
+
+
+    </script>
+
+    <div id="wrapper">
+
+        <div id="mode" >
+            <div class="dark">
+                <svg aria-hidden="true" viewBox="0 0 512 512">
+                    <title>lightmode</title>
+                    <path fill="currentColor" d="M256 160c-52.9 0-96 43.1-96 96s43.1 96 96 96 96-43.1 96-96-43.1-96-96-96zm246.4 80.5l-94.7-47.3 33.5-100.4c4.5-13.6-8.4-26.5-21.9-21.9l-100.4 33.5-47.4-94.8c-6.4-12.8-24.6-12.8-31 0l-47.3 94.7L92.7 70.8c-13.6-4.5-26.5 8.4-21.9 21.9l33.5 100.4-94.7 47.4c-12.8 6.4-12.8 24.6 0 31l94.7 47.3-33.5 100.5c-4.5 13.6 8.4 26.5 21.9 21.9l100.4-33.5 47.3 94.7c6.4 12.8 24.6 12.8 31 0l47.3-94.7 100.4 33.5c13.6 4.5 26.5-8.4 21.9-21.9l-33.5-100.4 94.7-47.3c13-6.5 13-24.7.2-31.1zm-155.9 106c-49.9 49.9-131.1 49.9-181 0-49.9-49.9-49.9-131.1 0-181 49.9-49.9 131.1-49.9 181 0 49.9 49.9 49.9 131.1 0 181z"></path>
+                </svg>
+            </div>
+            <div class="light">
+                <svg aria-hidden="true" viewBox="0 0 512 512">
+                    <title>darkmode</title>
+                    <path fill="currentColor" d="M283.211 512c78.962 0 151.079-35.925 198.857-94.792 7.068-8.708-.639-21.43-11.562-19.35-124.203 23.654-238.262-71.576-238.262-196.954 0-72.222 38.662-138.635 101.498-174.394 9.686-5.512 7.25-20.197-3.756-22.23A258.156 258.156 0 0 0 283.211 0c-141.309 0-256 114.511-256 256 0 141.309 114.511 256 256 256z"></path>
+                </svg>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <section id="top" class="section docs-heading">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="big-title text-center">
+                            <h1>Polycoin Whitepaper</h1>
+                            <p class="lead">A next evolution project on Binance smart chain <br>Launched, swap, wallet, built new exchange</p>
+							
+                        </div>
+                        <!-- end title -->
+                    </div>
+                    <!-- end 12 -->
+                </div>
+                <!-- end row -->
+
+                <hr>
+
+            </section>
+            <!-- end section -->
+
+            <div class="row">
+
+                <div class="col-md-3">
+                    <nav class="docs-sidebar" data-spy="affix" data-offset-top="300" data-offset-bottom="200" role="navigation">
+                        <ul class="nav">
+                            <li><a href="#line1">ABSTRACT</a></li>
+                            <li><a href="#line2">INTRODUCTION</a></li>
+                            <li><a href="#line3">FORWARD LOOKING STATEMENT</a></li>
+                            <li><a href="#line5">GENERAL</a></li>
+                            <li><a href="#line6">VALUES</a></li>
+                            <li><a href="#line7">TARGET MARKET</a></li>
+                            <li><a href="#line8">ECOSYSTEM</a></li>
+                            <li><a href="#line9">THE $PLYC TOKEN</a></li>
+                            <li><a href="#line10">TOKENOMICS</a></li>
+                            <li><a href="#line11">ROADMAP</a></li>
+                            <li><a href="#line12">TEAM</a></li>
+                            <li><a href="#line13">APPRECIATION</a></li>
+                            <li><a href="#line14">REPRESENTATION AND WARRANTIES BY THE PURCHASERS</a></li>
+                            
+                        </ul>
+                    </nav >
+                </div>
+                <div class="col-md-9">
+                    
+
+                    <section id="line1" class="section" style="padding:0px">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">ABSTRACT <hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                  <p>This paper proposes the Polycoin Asset, an economics structure which constitutes a decentralized meme project with a purposed $PLYC as a Utility Token. We are thus introducing the investors and customers to a genuine passive income scheme using our native Polycoin token. Since we are based on the BEP-20 technology, this consequently eliminating energy and computational waste while ensuring distributed fairness through a Proof of Stake (PoS) consensus, we are also proposing not only a highly profitable procedure by acquiring and holding $PLYC, but also by participating in different launchpads vetted and proposed by our team of experts. </p>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line2" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">INTRODUCTION <hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+						<div class="row">
+                            <div class="col-md-12">
+                                <p>Launched in October 2022, Polycoin
+                                    one of the fastest growing community in
+                                    crypto market. Polycoin is on a
+                                    mission to bring crypto to the average
+                                    person. Polycoin is built on binance
+                                    smart chain with extremely fast 5
+                                    second block times and cheaper gas
+                                    fees than ethereum</p>
+                                <p>A next evolution project on Binance smart chain. Launched, swap, wallet, built new exchange. </p>
+                                    The Polycoin protocol adds incentives to earning tokens safely and securely for $PLYC Token participants by introducing revenue sharing through 
+                                    the classic AMM model. We provide a platform for trading, staking, farming, referrals and winning ; 
+                                    these concepts are being actively developed as all new features are being launched on our upcoming project shortly.
+                                </p>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line3" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">FORWARD LOOKING STATEMENT <hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+						<div class="row">
+                            <div class="col-md-12">
+                                <p>Forward-looking statements relate to expectations or forecasts of future events. You can identify these statements by the fact that they do not relate strictly to historical or current facts. They use words such as "anticipate," "estimate," "expect," "project," "intend," "plan," "believe," and other words and terms of similar meaning in connection with a discussion of potential future events, circumstances or future operating or financial performance. These include statements relating to future actions, prospective launchpad products or product approvals, future performance or results of current and anticipated products, sales efforts, expenses, the outcome of contingencies such as legal proceedings, and financial results.</p>
+
+                              <p>Any or all our forward-looking statements here or in other publications may turn out to be wrong. Ultimately, we are a meme token. Our statements can be affected by inaccurate assumptions or by known or unknown present or future risks and uncertainties. Many such factors will be important in determining our actual future results. Consequently, no forward-looking statement can be guaranteed, and they may be adversely affected by factors, including general market conditions, competitive product development, product availability, current and future branded and generic competition, federal and state regulations and legislation, service availability issues, timing of trades, patent positions, litigations, and investigations. Our actual results may vary materially, and there are no guarantees about the performance of the token. We undertake no obligation to correct or update any forward-looking statements, whether because of new information, future events or otherwise</p>
+
+                              <h4><u>Cautionary Notes on Future Statements</u></h4>
+							  
+							  <p>All statements contained in this technical document, statements made in press releases or in any place accessible to the public and oral statements that may be made by the Polycoin team or their respective directors, executive directors or employees acting on behalf of the Polycoin team, other than statements of historical fact, constitute "forward-looking statements." Some of these statements can be identified by forward-looking terms such as "objective", "objective", "anticipate", "believe", "could", "estimate", "expect", "if", "intend", "may”, "plan", "possible", "probable", "project", "should", "would", "will be" or other similar terms.</p>
+							  
+							  <p>However, these terms are not the exclusive means of identifying forward-looking statements. All statements regarding Polycoin team's financial position, business strategies, plans and prospects, and future industry prospects made by Polycoin team are forward-looking statements. These forward-looking statements, including but not limited to statements about the $PLYC token and its profitability, prospects, future plans, other expected industry trends and other matters discussed in this Whitepaper are matters that are not historical facts, but only predictions.</p>
+							  
+							  <p>These forward-looking statements involve known and unknown risks, uncertainties and other factors that may cause $PLYC’s actual future results, performance, or achievements to be materially different from any future results, performance or achievements expected, expressed or implied by such.</p>
+							  
+							  <p>These factors include, but are not limited to:</p>
+							  <ul>
+                                    <li>a) changes in the political, social, economic, and stock market conditions or cryptocurrencies, and the regulatory environment in the countries in which the Polycoin team carry out their respective businesses and operations.</li>
+                                    <li>b) the risk that the Polycoin team may not be able to execute or implement its respective business strategies and future.</li>
+                                    <li>c) changes in interest rates and exchange rates of fixed currencies and cryptocurrencies.</li>
+                                    <li>d) changes in the anticipated growth strategies and expected internal growth of Polycoin.</li>
+                                    <li>e) changes in the availability and salaries of employees required by the Polycoin team to operate their respective businesses and operations.</li>
+                                    <li>f) changes in user behavior and preferences of $PLYC Token holders.</li>
+                                    <li>g) changes in the competitive conditions under which Polycoin team operate, and its ability to compete in such conditions.</li>
+                                    <li>h) changes in Polycoin team's future capital needs and the availability of financing and capital to finance such needs.</li>
+                                    <li>i) war or acts of international or national terrorism.</li>
+                                    <li>j) occurrences of catastrophic events, natural disasters and cases of force majeure that affect the business and / or operations of the Polycoin team.</li>
+                                    <li>k) other factors beyond Polycoin team's control.</li>
+                                    <li>l) any risks and uncertainties associated with Polycoin team, its businesses and operations, the $PLYC Tokens, the Token Sales, etc. </li>
+                                </ul>
+							  
+                            </div>
+                            <!-- end col -->
+                        </div>
+
+                    </section>
+                    <!-- end section -->
+
+
+
+                    <section id="line5" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">GENERAL <hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+
+                            <div class="col-md-12">
+                               <h4><strong>A next evolution project on Binance smart chain. Launched, swap, wallet, built new exchange.</strong></h4>
+							   <p>$PLYC Token was born in 2022 with the vision to make the record by growing token price from 0.0000006$. 
+                                   The decentralized meme project came with the purpose of issuing $PLYC as a Utility Token. 
+                                   Within the first 60 Days $PLYC will Launch Decentralized Swap and Initial Liquidity Offering Platform. 
+                                   As a consequence, the $PLYC Token Price grew from $0.0000008 to over $0.000001. </p>
+							   <p>Whilst it is assumed to be a meme token, what set is apart is that the Polycoin team comes up with a layer of practicality and usability beyond the simple existence of the token, adding a few relevant services, and thus creating a whole ecosystem. The differences between the $PLYC token and other meme cryptocurrencies on the market include the following:</p>
+                               <ul>
+                                    <li>$PLYC leverages the Binance Smart Chain, for transactions.</li>
+                                    <li>$PLYC uses provides a whole range of other crypto services on its platform, services which are not correlated or conditioned to the usability of the native token.</li>
+                                   
+                                </ul>
+                            </div>
+
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line6" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">VALUES <hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+
+                            <div class="col-md-12">
+							
+								<h4><strong>COMMUNITY</strong></h4>
+								
+								 <p>$PLYC is fully decentralized and owned by its love and vibrant community. We welcome and embrace diverse perspectives to build POLYCOIN into the best community in crypto world.</p>
+								 
+								 
+								 <h4><strong>TRANSPARENCY</strong></h4>
+								
+								 <p>$PLYC is decentralized and supported by its community of enthusiasts. We encourage open communication and believe trust, transparency.</p>
+								 
+								 
+								 <h4><strong>TRUST</strong></h4>
+								
+								 <p>In cryptocurrency market trust is paramount. That means full transparency not only in the community and development but also in security efforts. $PLYC has been audited by a third party Certik.</p>
+								 
+								 <h4><strong>LONGEVITY</strong></h4>
+								
+								 <p>$PLYC is in for the long haul. The decentralized community is fostering and adopting long term development of the ecosystem and foundation in efforts to drive real use cases which are dissociated from the token usage.</p>
+                            </div>
+							
+                           
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line7" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">TARGET MARKET<hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            
+							<p>Crypto Traders – these participants can use $PLYC for speculating and hedging cryptocurrency volatility. $PLYC can also be used to convert cryptocurrency into fiat.</p>
+							<p>Standard Customers – these customers may want to buy $PLYC as a crypto asset, for long-term holding. $PLYC could be used to pay for goods and services, in the future, or as an option to participate in different launchpads. Its high volatility as an asset and its unpredictability make it an invaluable form of speculative asset.</p>
+							<p>Private Institutions – $PLYC crypto assets give institutions new opportunities for capital gains. There is free liquidity and extra earning potential from trading $PLYC into fiat and vice versa. The use of cryptocurrency has become a major industry. Institutions can profit from earning from the volatility of the underlying asset, and from using the $PLYC management system. At the same time, new crypto projects that invest in $PLYC reinforce the Token’s reputation, which ultimately increases their profit not only in the native token, but also in the token they own by launching on our platform through the $PLYC partner program.</p>
+							
+							
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line8" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">ECOSYSTEM <hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+								<h4><strong>$PLYC SWAP</strong></h4>
+                                <p>Decentralized exchange that features custom functionality and allows holders to trade among themselves, and without any centralized point of failure, any BEP20 token for another. It is powered by Pancakeswap, the most secure and safest DEX in the crypto world. It acts as the foundation on which Polycoin will develop further functionalities and use-cases for the $PLYC holders.</p>
+
+                                <h4><strong>$PLYC LAUNCHPAD</strong></h4>
+                                <p>Initial Liquidity Offering that feature $PLYC pair only and without any centralized point of failure. $PLYC Launchpad is the safest and most secure means for innovative crypto startups, where users can participate in Initial Liquidity Offering using $PLYC. It is fully decentralized, it is based on the Binance Smart Chain solidity smart contract, and it has the easiest user interface.</p>
+
+                                <h4><strong>$PLYC LIVE CASINO</strong></h4>
+                                <p>Casino gaming platform will have live casino with attractive UI Design and offering to users play casino using $PLYC token.</p>
+
+                                
+                                <p>Safest and Secure Multi Token $PLYC Wallet will have easiest UI with Multi Functionality. </p>
+                                <p>The $PLYC’ wallet app will be introduced on both Android & iOS. Cross-Chain Trading will be enabled through the implementation of the Polycoin Protocol, linking multiple blockchain infrastructures. Initially, the MetaMask wallet will be used as the wallet on the website, but will be replaced by $PLYC’s in-house developed wallet. Later, MetaMask will only function in the web-app and shall be replaced by the native Wallet on mobile application, which will function on both the web and mobile applications.</p>
+								
+								<h4><strong>POLYCOIN-Wallet:</strong></h4>
+                                <ul>
+                                    <li>Will be able to facilitate the auto execution functions</li>
+                                    <li>Cross-chain trading will be enabled through the development and implementation of Polycoin protocol which will work towards bridging the different infrastructures that will be added to the trading</li>
+                                   
+                                </ul>
+								
+								<h4><strong>$PLYC DECENTRALIZED EXCHANGE</strong></h4>
+								<p>Centralized Crypto Exchange Ios/Android App. $PLYC will bring for their Polycoin Family.</p>
+
+								<h4><strong>BUSINESS MODEL</strong></h4>
+								<p>$PLYC’s Decentralized Exchange model generates revenue through trading, direct token to token swaps, the tier programs for $PLYC tools and launchpad offerings. These revenue streams are further briefed below:</p>
+								<ul>
+                                    <li>Trader Fees - a percentage fee is subtracted from both the maker and the taker of each trade.</li>
+                                    <li>Token Swap - a percentage fee is subtracted for each token exchange on the platform.</li>
+                                    <li>$PLYC Tools - Proprietary tools will come in the form of tiers, each levying a certain fee.</li>
+                                   
+                                </ul>
+
+                            </div>
+
+                           
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line9" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">THE $PLYC TOKEN <hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                
+								<p>$PLYC is an BEP20 token which started on the Binance Smart Chain. Binance Smart Chain is much greater speed and efficiency than other, competing chains. With decentralized exchanges on BSC offering lightning-fast swaps and extremely low fees, BSC has started to become one of the most widely used blockchains for Decentralized Finance (Defi). </p>
+								<p>BSC uses a token protocol developed by the Binance Team called BEP-20. Known for 5 second block speeds much faster than doge with 1 minute block speeds. </p>
+								<p>The $PLYC Token Smart Contract successfully passed a top-grade security audit to further the community's confidence, in full transparency. </p>
+								<p>$PLYC liquidity pools and listings are constantly added by many completely independent enthusiasts and supporters on a number of different exchanges, among which: Bitmart, Pancakeswap, Hotbit, Latoken</p>
+
+                            </div>
+
+                            
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line10" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">TOKENOMICS <hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+
+                                <p>At Polycoin, we are designing a cryptocurrency based on definitive market rules and fundamental economic principles. Polycoin reconciles a high-performance protocol with integral price stability features.</p>
+                                <h4>Total Supply: <strong>10 000  </strong></h4>
+                                <h4>Team and Project Budget: <strong>1%</strong></h4>
+                                <h4>Name: <strong>Polycoin</strong></h4>
+                                <h4>Symbol: <strong>$PLYC</strong></h4>
+                                <h4>Decimal: <strong>18</strong></h4>
+                                <h4><strong><u>Project Budget</u></strong></h4>
+                                <h4><strong>0.5% Airdrop</strong></h4>
+                                <h4><strong>0.5% Team</strong></h4>
+                                <h4><strong>0.5% Marketing</strong></h4>
+                                <h4><strong>2.5% Presale</strong></h4>
+                                <h4><strong>4% Liquidity</strong></h4>
+                                <h4><strong><u>Burning Tokens – Deflationary Approach</u></strong></h4>  
+                            </div>
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line11" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">ROADMAP<hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                
+                            <h4><strong><u>Phase 1</u></strong></h4>
+							   
+							<b class="tabtext"><i class="fa fa-check" aria-hidden="true"></i> Presale  </b><br/>
+							<b class="tabtext"><i class="fa fa-check" aria-hidden="true"></i> Marketing</b><br/>
+							<b class="tabtext"><i class="fa fa-check" aria-hidden="true"></i> Built Community</b><br/>
+                            <h4><strong><u>Phase 2</u></strong></h4>
+
+							<b class="tabtext"><i class="fa fa-check" aria-hidden="true"></i>Listing on hotbit</b><br/> 
+							<b class="tabtext"><i class="fa fa-check" aria-hidden="true"></i> Listing on Bitmart</b><br/> 
+							<b class="tabtext"><i class="fa fa-check" aria-hidden="true"></i> Listing on Pancakeswap</b><br/> 
+
+							<h4><strong><u>Phase 3</u></strong></h4>
+							   
+							<b class="tabtext"><i class="fa fa-check" aria-hidden="true"></i> POLYCOIN Swap</b><br/> 
+						    <b class="tabtext"><i class="fa fa-check" aria-hidden="true"></i> Listing on CMC & CG</b><br/> 
+						    <b class="tabtext"><i class="fa fa-check" aria-hidden="true"></i> 50K Holders</b><br/> 
+						  
+							<h4><strong><u>Phase 4</u></strong></h4>
+							   
+							<b class="tabtext"> POLYCOIN Launchpad  </b><br/> 
+							<b class="tabtext"> Aproch Tier 1 exchanges Binance Hubi Global  </b><br/>  
+								
+							<h4><strong><u>Phase 5</u></strong></h4>
+							   
+							<b class="tabtext"> Wallet Launch</b><br/>
+						    <b class="tabtext"> POLYCOIN Debit Card</b><br/>
+						    <b class="tabtext"> NFT Marketplace</b><br/>
+
+                            <h4><strong><u>Phase 6</u></strong></h4>
+							   
+							<b class="tabtext"> 100K Holders</b><br/>
+						    <b class="tabtext"> POLYCOIN Exchange</b><br/>
+								
+                            </div>
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+                    <!-- end section -->
+					
+					
+                    <section id="line12" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">TEAM<hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                
+                               <p>$PLYC developers have a long history of working with gold and cryptocurrency. 
+                                   They also possess the marketing, programming, logical, technical, and operational skills needed to accomplish this project.
+                                    The Core team has been developing the fundamental idea behind $PLYC for the last 12 months.
+                                    </p>
+								
+                            </div>
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+                    <!-- end section -->
+                    <section id="line13" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">APPRECIATION<hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                
+                               <p>Our token mechanics are structured so that there are a multitude of influences for material appreciation. Starting with growing transactions and constant onboarding of new clients we start to build a higher use for our token and a higher demand. With this kind of assistance to the velocity of our token along with its use in crypto trading, it can measurably reach its true intrinsic value.</p>
+                               <p>With the growing use of the token by businesses on the platform we effectively reduce price risk relative to the dollar for all holders, setting a comfortable base for which we can assume, following price discovery on exchanges, our cryptocurrency will not fall through. This also sets the investment standard for traders to buy knowing that eventually, $PLYC tokens will reach certain support levels where there is only more upside as we grow.</p>
+                               <p>We encourage the reader to do its own research, and decide whether to invest in our project. </p>
+								
+                            </div>
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+                    <!-- end section --> 
+					
+					
+					<section id="line14" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">REPRESENTATION AND WARRANTIES BY THE PURCHASERS<hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                
+                               <p>By contributing in the token sale of $PLYC, the consumers represent and warrant to Polycoin team as follows:</p>
+							   
+							   <ul>
+                                    <li>a) You are permitted and have full power to purchase $PLYC according to the laws that apply in your jurisdiction of domicile.</li>
+                                    <li>b) You are solely accountable for deciding whether the purchase of $PLYC is appropriate for you.</li>
+                                    <li>c) You are not performing as a mediator on behalf of any other person or entity who wish to purchase $PLYC or contribute in its token sale.</li>
+                                    <li>d) You have thoroughly studied the risks, costs, and any other shortcomings of procuring $PLYC and realized the risks, costs, and any other disadvantages associated with $PLYC and its token sale.</li>
+                                    <li>e) You are not acting for the purpose of speculative investment.</li>
+                                    <li>f) You agree and acknowledge that $PLYC does not constitute securities in any form in your jurisdiction.</li>
+                                    <li>g) You agree and admit that no controlling authority has inspected or approved the information set out in this Whitepaper, no such action has been or will be taken under the laws, regulatory requirements or rules of any jurisdiction and the publication, distribution or broadcasting of this whitepaper to you does not imply that the applicable laws, regulatory requirements or rules have been complied with;</li>
+                                    <li>h) You agree and acknowledge that this whitepaper, the undertaking and/or the completion of the $PLYC token sale or future trading of $PLYC on any crypto currency exchange, shall not be interpreted or deemed by you as an indication of the merits of Polycoin team or $PLYC.</li>
+                                    <li>i) The distribution or dissemination of this whitepaper, any part thereof or any copy thereof, or acceptance of the same by you, is not prohibited or restricted by the applicable laws, regulations or rules in your jurisdiction, and where any restrictions in relation to possession are applicable, you have observed and obeyed with all such restrictions at your own expense and without liability to Polycoin team.</li>
+                                    <li>k) You agree and acknowledge that in the case where you wish to purchase any $PLYC , it is not to be construed, interpreted, classified or treated as:
+										<ul>
+											<li>i. any kind of currency other than cryptocurrency.</li>
+											<li>ii. debentures, stocks or shares issued by Polycoin team.</li>
+											<li>iii. rights, options or derivatives in respect of such debentures, stocks or shares.</li>
+											<li>iv. rights under a contract for differences or under any other contract the purpose or pretended purpose of which is to secure a profit or avoid a loss</li>
+											<li>v. units in a collective investment scheme.</li>
+											<li>vi. units in a business trust.</li>
+											<li>vii. derivatives of units in a business trust; or</li>
+											<li>viii. any other security or class of securities.</li>
+										
+										</ul>
+									
+									</li>
+									<li>l) You have a good understanding of the operation, functionality, usage, storage, transmission mechanisms and other material characteristics of crypto currencies, block chain-based software systems, crypto currency wallets or other related token storage mechanisms, blockchain technology and smart contract technology.</li>
+									<li>m) You are fully aware and understand that in the case where you wish to purchase any $PLYC, there are risks associated with Polycoin team and its business and operations.</li>
+									<li>n) You agree and acknowledge that Polycoin team is not liable for any indirect, special, incidental, consequential or other losses of any kind, in tort, contract or otherwise (including but not limited to loss of revenue, income or profits, and loss of use or data), arising out of or in connection with any acceptance of or reliance on this whitepaper or any part thereof by you.</li>
+									<li>o) You will not use the token sale for any illegal activity, including but not limited to money laundering and the financing of terrorism; and</li>
+									<li>p) All the above representations and warranties are true, complete, accurate and non-misleading from the time of your access to and/or acceptance of possession this whitepaper or such part thereof (as the case may be).</li>
+								</ul>
+                                   <h4><strong>UPDATES TO THE DETAIL OF THE TOKEN SALE</strong></h4>
+								   
+								   <p>Polycoin team reserves the right, at its sole discretion, to change, modify, add, or remove portions of this whitepaper and the terms at any time during the sale by posting the amendment on the Polycoin team website. Any purchaser will be deemed to have accepted such changes by purchasing $PLYC. If at any point you do not agree to any portion of the then-current version of this whitepaper and the terms, you should not purchase $PLYC.</p>
+								   
+								   <h4><strong>MARKET AND INDUSTRY INFORMATION</strong></h4>
+								   
+								   <p>This whitepaper includes market and industry information and forecasts that have been obtained from internal surveys, reports and studies, where appropriate, as well as market research, publicly available information and industry publications. Such surveys, reports, studies, market research, publicly available information and publications generally state that the information that they contain has been obtained from sources believed to be reliable, but there can be no assurance as to the accuracy or completeness of such included information. Polycoin team has not conducted any independent review of the information extracted from third party sources, verified the accuracy or completeness of such information or ascertained the underlying economic assumptions relied upon therein. Consequently, any entities of Polycoin team and officers and employees thereof do not make any representation or warranty as to the accuracy or completeness of such information and shall not be obliged to provide any updates on the same. </p>
+                                
+							   
+                               
+                            </div>
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+                    <!-- end section -->
+                </div>
+                <!-- // end .col -->
+
+            </div>
+            <!-- // end .row -->
+
+        </div>
+        <!-- // end container -->
+
+    </div>
+    <!-- end wrapper -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/retina.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+
+    <!-- CUSTOM PLUGINS -->
+    <script src="js/custom.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="js/syntax-highlighter/scripts/shCore.js"></script>
+    <script src="js/syntax-highlighter/scripts/shBrushXml.js"></script>
+    <script src="js/syntax-highlighter/scripts/shBrushCss.js"></script>
+    <script src="js/syntax-highlighter/scripts/shBrushJScript.js"></script>
+
+</body>
+
+
+<!-- Mirrored from POLYCOIN.finance/POLYCOIN_inu_whitepaper/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Jun 2022 09:03:26 GMT -->
+</html>
