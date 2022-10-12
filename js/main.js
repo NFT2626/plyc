@@ -43,10 +43,9 @@ let option = {
             },
             /* Dataset for chart */
             data: [
-                { value: 10, name: 'Marketing(10%)' },
-                { value: 60, name: 'Liquidity(60%)' },
-                { value: 5, name: 'Airdrop(5%)' },
-                { value: 25, name: 'Team(25%)' },
+                { value: 40, name: 'Liquidity(40%)' },
+                { value: 60, name: 'Presale(60%)' },
+                { value: 0, name: 'Team(0%)' },
             ],
         },
     ],
